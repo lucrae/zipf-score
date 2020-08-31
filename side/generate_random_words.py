@@ -20,9 +20,9 @@ from load import load_brown
 words = load_brown()
 unique_words = list(dict.fromkeys(words))
 
-n_words = 10000000
+n_words = 100000
 
-with open('large_random.txt', 'w') as file:
+with open('random_medium.txt', 'w') as file:
 
     random_words = []
     for i in range(n_words):

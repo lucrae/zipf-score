@@ -33,9 +33,9 @@ def load_brown():
     
     return brown_words
 
-def load_random(file='random_large'):
+def load_random(size='large'):
 
-    file_path = os.path.join('corpus', 'random', f'{file}.txt')
+    file_path = os.path.join('corpus', 'random', f'random_{size}.txt')
     with open(file_path, 'r') as file:
         file_words = file.read().split(' ')
 
